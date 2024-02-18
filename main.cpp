@@ -20,13 +20,12 @@ int main(int argc, char* const argv[]) {
 
     Record employeeInfo;
     int employeeID = 0;
-    int result=0;
 
     // Create the index
     LinearHashIndex emp_index("EmployeeIndex");
     emp_index.createFromFile("Employee.csv");
 
-    // Loop to lookup IDs until user is ready to quit
+    //Loop to lookup IDs until user is ready to quit
     // while(true){
         
     //     cout<<"Insert employee ID: ";
@@ -38,10 +37,7 @@ int main(int argc, char* const argv[]) {
     //     if(employeeInfo.id==-1){
     //         cout<<"No record info."<<endl;
     //     } else{
-    //         cout<<"ID: "<<employeeInfo.id
-    //         <<", Name: "<<employeeInfo.name
-    //         <<", Bio: "<< employeeInfo.bio
-    //         << ", manager_id: "<<employeeInfo.manager_id<<endl;
+    //         employeeInfo.print();
     //     }
     //     cout<<"--------------------------------------";
     //     cout<<"--------------------------------------";
